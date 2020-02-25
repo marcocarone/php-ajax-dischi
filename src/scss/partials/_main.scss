@@ -1,9 +1,10 @@
 main {
   .wrapper {
-    max-width: $widthWrapper;
-    margin: 210px auto 40px;
+
+    margin: 160px auto 40px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 
     .cd__box {
       background-color: #f5f5f5;
@@ -12,12 +13,46 @@ main {
       display: flex;
       flex-direction: column;
       align-items: center;
-      flex-basis: calc(80% / 3);
+      flex-basis: calc((100% / 3) - 40px);
+
       .cd__img {
         max-width: 100%;
+
         img {
           width: 100%;
         }
+      }
+
+      h2,
+      h3,
+      h4 {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 960px) {
+  main {
+    .wrapper {
+
+      .cd__box {
+        flex-basis: calc((100% / 2) - 40px);
+
+
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    .wrapper {
+
+      .cd__box {
+        flex-basis: calc((100% / 1) - 40px);
+
+
       }
     }
   }

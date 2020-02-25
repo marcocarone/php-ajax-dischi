@@ -39,9 +39,6 @@ include __DIR__ . "/database.php";
           <ul>
             <li><a class="active" href="#">menu</a></li>
             <li><a href="#">menu</a></li>
-            <li><a href="#">menu</a></li>
-            <li><a href="#">menu</a></li>
-
           </ul>
         </div>
         <div class="menu_right">
