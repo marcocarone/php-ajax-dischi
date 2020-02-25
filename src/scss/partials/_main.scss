@@ -1,0 +1,24 @@
+main {
+  .wrapper {
+    max-width: $widthWrapper;
+    margin: 210px auto 40px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .cd__box {
+      background-color: #f5f5f5;
+      padding: 20px;
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-basis: calc(80% / 3);
+      .cd__img {
+        max-width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
