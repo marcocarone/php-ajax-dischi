@@ -3,25 +3,13 @@
 include __DIR__ . "/database.php";
  ?>
 
-
-
-<!-- <?php
-   foreach ($database as $key) {
-       echo $key["poster"];
-       echo $key["title"];
-       echo $key["author"];
-       echo $key["year"];
-   }
-
-  ?> -->
-
-
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="public/css/style.css">
   <title>Dischi</title>
 </head>
@@ -39,6 +27,7 @@ include __DIR__ . "/database.php";
           <ul>
             <li><a class="active" href="#">menu</a></li>
             <li><a href="#">menu</a></li>
+
           </ul>
         </div>
         <div class="menu_right">

@@ -108,7 +108,7 @@ main .wrapper .cd__box h4 {
   text-align: center;
 }
 
-@media screen and (min-width: 768px) and (max-width: 960px) {
+@media screen and (max-width: 960px) and (min-width: 768px) {
   main .wrapper .cd__box {
     flex-basis: calc((100% / 2) - 40px);
   }
