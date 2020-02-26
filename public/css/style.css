@@ -67,6 +67,10 @@ header .wrapper .menu .menu_left a.active {
   border-bottom: 4px solid #ab2251;
   padding-bottom: 3px;
 }
+header .wrapper .menu .menu_right {
+  display: flex;
+  align-items: center;
+}
 header .wrapper .menu .menu_right ul {
   display: flex;
   padding: 20px 0 10px;
@@ -79,6 +83,28 @@ header .wrapper .menu .menu_right ul li a {
   color: #5f6368;
   font-size: 0.88em;
   font-weight: 600;
+}
+header .wrapper .menu .menu_right .search-bar {
+  width: 120px;
+  border-radius: 20px;
+  border: 1px solid rgba(151, 151, 151, 0.5);
+  height: 30px;
+  padding: 10px;
+}
+header .wrapper .menu .menu_right .search-bar::-webkit-input-placeholder {
+  color: #e2e2e2;
+}
+header .wrapper .menu .menu_right .search-bar::-moz-placeholder {
+  color: #e2e2e2;
+}
+header .wrapper .menu .menu_right .search-bar:-ms-input-placeholder {
+  color: #e2e2e2;
+}
+header .wrapper .menu .menu_right .search-bar::-ms-input-placeholder {
+  color: #e2e2e2;
+}
+header .wrapper .menu .menu_right .search-bar::placeholder {
+  color: #e2e2e2;
 }
 
 main .wrapper {

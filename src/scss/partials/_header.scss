@@ -55,6 +55,18 @@ header {
 
       .menu_right {
         @include link-menu;
+        display: flex;
+        align-items: center;
+        .search-bar {
+          width: 120px;
+          border-radius: 20px;
+          border: 1px solid $colorBorder;
+          height: 30px;
+          padding: 10px;
+          &::placeholder {
+            color: rgb(226, 226, 226);
+          }
+        }
       }
     }
   }

@@ -27,9 +27,7 @@
           </ul>
         </div>
         <div class="menu_right">
-          <ul>
-            <li><a href="#">Altro menu</a></li>
-          </ul>
+          <input class="search-bar" type="text" name="input" value="" placeholder="Cerca artista">
         </div>
       </div>
     </div>
