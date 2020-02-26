@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', ;
+  font-size: $fontSize;
+  min-width: 320px;
+}
+
+@mixin link-menu{
+  ul {
+    display: flex;
+    padding: 20px 0 10px;
+
+    li {
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        color: $color;
+        font-size: 0.88em;
+        font-weight: 600;
+      }
+    }
+  }
+}
