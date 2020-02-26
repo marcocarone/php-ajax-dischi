@@ -1,9 +1,13 @@
+<?php
+
+include __DIR__ . "/database.php";
+ ?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="public/css/style.css">
@@ -36,8 +40,17 @@
   </header>
   <main>
     <div class="wrapper">
-
-
+      <?php
+        foreach ($database as $key) { ?>
+      <div class="cd__box">
+        <div class="cd__img">
+          <img src="<?php echo $key["poster"]; ?>" alt="<?php echo $key["title"]; ?>">
+        </div>
+        <h2><?php echo $key["title"]; ?></h2>
+        <h3><?php echo $key["author"]; ?></h3>
+        <h4><?php echo $key["year"]; ?></h4>
+      </div>
+      <?php  } ?>
 
     </div>
   </main>
@@ -62,18 +75,6 @@
     </div>
   </footer>
 
-
-  <!-- TEMPLATE ALBUM -->
-  <script id="album" type="text/x-handlebars-template">
-    <div class="cd__box">
-      <div class="cd__img">
-        <img src="{{copertina}}" alt="{{titolo}}">
-      </div>
-      <h2>{{titolo}}</h2>
-      <h3>{{artista}}</h3>
-      <h4>{{anno}}</h4>
-    </div>
-  </script>
   <script src="public/js/script.js" charset="utf-8"></script>
 </body>
 
