@@ -1,16 +1,15 @@
 header {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-bottom: 1px solid $colorBorder;
+  padding: 24px  0 0 0;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+
   .wrapper {
-
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    background: #fff;
-    border-bottom: 1px solid $colorBorder;
-    padding: 24px 24px 0;
-    top: 0;
-    width: 100%;
-    z-index: 3;
-
     .top-box {
       display: flex;
       align-items: center;
@@ -19,6 +18,7 @@ header {
 
       .logo {
         width: 50px;
+
         img {
           width: 100%;
           margin-right: 20px;
@@ -37,6 +37,10 @@ header {
     .menu {
       display: flex;
       justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      padding: 0 20px;
+      margin: 0 auto;
 
       .menu_left {
         @include link-menu;
@@ -57,12 +61,14 @@ header {
         @include link-menu;
         display: flex;
         align-items: center;
+
         .search-bar {
           width: 120px;
           border-radius: 20px;
           border: 1px solid $colorBorder;
           height: 30px;
           padding: 10px;
+
           &::placeholder {
             color: rgb(226, 226, 226);
           }

@@ -10,13 +10,13 @@ body {
   min-width: 320px;
 }
 
-header .wrapper {
+header {
   position: fixed;
   display: flex;
   flex-direction: column;
   background: #fff;
   border-bottom: 1px solid rgba(151, 151, 151, 0.5);
-  padding: 24px 24px 0;
+  padding: 24px 0 0 0;
   top: 0;
   width: 100%;
   z-index: 3;
@@ -44,6 +44,10 @@ header .wrapper .top-box h2 {
 header .wrapper .menu {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 header .wrapper .menu .menu_left ul {
   display: flex;
@@ -108,6 +112,7 @@ header .wrapper .menu .menu_right .search-bar::placeholder {
 }
 
 main .wrapper {
+  max-width: 1200px;
   margin: 160px auto 40px;
   display: flex;
   flex-wrap: wrap;
@@ -149,7 +154,9 @@ footer {
   border-top: 1px solid #eee;
 }
 footer .wrapper {
-  margin: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
   margin-bottom: 0px;
   display: flex;
   height: 40px;
